@@ -1,15 +1,15 @@
 <template>
   <div class="login-body">
     <div class="login-input">
-      <h2 class="logn-title">管理系统</h2>
+      <h1 class="logn-title">vue-typeScript管理系统</h1>
       <Form :model="formInline">
         <FormItem>
-          <Input type="text" v-model="formInline.user" placeholder="请随便输入">
+          <Input type="text" size='large' v-model="formInline.user" placeholder="请随便输入">
             <Icon type="ios-person-outline" slot="prepend"></Icon>
           </Input>
         </FormItem>
         <FormItem>
-          <Input type="password" v-model="formInline.password" placeholder="请随便输入">
+          <Input type="password" size='large' v-model="formInline.password" placeholder="请随便输入">
             <Icon type="ios-lock-outline" slot="prepend"></Icon>
           </Input>
         </FormItem>
