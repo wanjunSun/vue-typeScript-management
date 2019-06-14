@@ -12,3 +12,30 @@ export function isMobleOrPc(){
         return false;
     }
 }
+
+/**
+ * @author: 孙万俊
+ * @description: 进入全屏
+ * @param {type} 
+ * @return: 
+ * @Date: 2019-06-14 11:58:07
+ */
+export function requestFullScreen(){
+    let de = document.documentElement;
+    if (de.requestFullscreen) {
+      de.requestFullscreen();
+    } 
+}
+/**
+ * @author: 孙万俊
+ * @description: 退出全屏
+ * @param {type} 
+ * @return: 
+ * @Date: 2019-06-14 11:58:07
+ */
+export function exitFullScreen(){
+    var de = document;
+    if (de.exitFullscreen) {
+      de.exitFullscreen();
+    } 
+}

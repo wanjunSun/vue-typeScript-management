@@ -1,15 +1,17 @@
 <template>
   <div style="height:100vh;">  
       <Row style="height:100vh;">
-        <Col :span="4" style="height:100vh;background-color:#50596e">
-            <Menu style='width:100%'></Menu>
+        <Col :span="4" style="height:100vh;">
+            <Menu></Menu>
         </Col> 
         <Col :span="20">
-            <Row>
-                <Col :span='24'></Col>
+            <Row >
                 <Col :span='24'>
-                    <router-view></router-view>
+                    <myHeader></myHeader>
                 </Col>
+                <Col :span='24' style="padding: 10px; height: calc(100vh - 50px);;overflow: auto;">
+                    <router-view></router-view>
+                </Col>  
             </Row>
         </Col> 
       </Row>
@@ -19,9 +21,11 @@
 <script lang="ts">
 import {Component,Vue} from "vue-property-decorator";
 import Menu from '@/components/Menu.vue';
+import myHeader from '@/components/header.vue';
 @Component({
     components:{
-        Menu
+        Menu,
+        myHeader
     }
 })
 export default class Home extends Vue {

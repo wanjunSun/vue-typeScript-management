@@ -44,7 +44,7 @@ export default class Login extends Vue {
     } else if (this.formInline.password == "") {
       this.$Message.warning("请输入密码!");
     } else {
-      this.$router.push("/home");
+      this.$router.push("/pagehome");
     }
   }
   mounted() {
