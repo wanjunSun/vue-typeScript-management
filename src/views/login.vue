@@ -4,25 +4,45 @@
       <h1 class="logn-title">vue-typeScript管理系统</h1>
       <Form :model="formInline">
         <FormItem>
-          <Input type="text" size='large' v-model="formInline.user" placeholder="请随便输入">
-            <Icon type="ios-person-outline" slot="prepend"></Icon>
+          <Input
+            type="text"
+            size='large'
+            v-model="formInline.user"
+            placeholder="请随便输入"
+          >
+          <Icon
+            type="ios-person-outline"
+            slot="prepend"
+          ></Icon>
           </Input>
         </FormItem>
         <FormItem>
-          <Input type="password" size='large' v-model="formInline.password" placeholder="请随便输入">
-            <Icon type="ios-lock-outline" slot="prepend"></Icon>
+          <Input
+            type="password"
+            size='large'
+            v-model="formInline.password"
+            placeholder="请随便输入"
+          >
+          <Icon
+            type="ios-lock-outline"
+            slot="prepend"
+          ></Icon>
           </Input>
         </FormItem>
       </Form>
       <div class="login-btn">
-        <Button type="info" @click="handleSubmit" long>登 录</Button>
+        <Button
+          type="info"
+          @click="handleSubmit"
+          long
+        >登 录</Button>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import {Component,Vue} from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class Login extends Vue {
@@ -30,9 +50,9 @@ export default class Login extends Vue {
     user: "",
     password: ""
   };
-  
+
   /**
-   * @author: 孙万俊
+   * @author: 青稞
    * @description: 登录验证
    * @param {null}
    * @return:
@@ -47,8 +67,7 @@ export default class Login extends Vue {
       this.$router.push("/home");
     }
   }
-  mounted() {
-  }
+  mounted() {}
 }
 </script>
 

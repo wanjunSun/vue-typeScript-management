@@ -1,5 +1,5 @@
 /**
- * @author: 孙万俊
+ * @author: 青稞
  * @description: 验证是pc还是移动
  * @param {type} 
  * @return: boole
@@ -14,7 +14,7 @@ export function isMobleOrPc(){
 }
 
 /**
- * @author: 孙万俊
+ * @author: 青稞
  * @description: 进入全屏
  * @param {type} 
  * @return: 
@@ -27,7 +27,7 @@ export function requestFullScreen(){
     } 
 }
 /**
- * @author: 孙万俊
+ * @author: 青稞
  * @description: 退出全屏
  * @param {type} 
  * @return: 

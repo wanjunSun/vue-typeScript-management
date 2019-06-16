@@ -10,7 +10,8 @@
                     <myHeader></myHeader>
                 </Col>
                 <Col :span='24' style="padding: 10px; height: calc(100vh - 50px);;overflow: auto;">
-                    <router-view></router-view>
+                    <router-view v-if="this.$store.state.isRead" ></router-view>
+                    <Spin size="large" fix v-else></Spin>
                 </Col>  
             </Row>
         </Col> 
