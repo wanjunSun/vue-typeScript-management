@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 Vue.use(Router);
 
-import home from '@/views/home.vue';
+import home from '@/views/Home.vue';
 const constantRouterMap = [
   { path: '/', redirect: '/login' },
   {
