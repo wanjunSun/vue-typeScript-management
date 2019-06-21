@@ -37,6 +37,26 @@ const constantRouterMap = [
         meta: { title: '系统设置', icon: 'ios-build-outline' },
       }
     ]
+  },
+  {
+    path: '/drag',
+    name: 'drag',
+    component: home,
+    meta: { title: '组件设置', icon: 'ios-cog-outline' },
+    children: [
+      {
+        path: '/dragpage',
+        name: 'dragpage',
+        component: () => import(/* webpackChunkName: "dragpage" */ '@/components/dragpage.vue'),
+        meta: { title: '可拖动抽屉', icon: 'logo-buffer' },
+      },
+      {
+        path: '/segmentation',
+        name: 'segmentation',
+        component: () => import(/* webpackChunkName: "segmentation" */ '@/components/segmentation.vue'),
+        meta: { title: '分割窗口', icon: 'ios-browsers-outline' },
+      }
+    ]
   }
 ]
 export default new Router({
